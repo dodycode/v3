@@ -12,6 +12,12 @@
     "url": "https://kdramadb.pages.dev/"
   },
   {
+    "name": "React JS Spotify Clone",
+    "description": "Simple react js web that consume data from Spotify WEB API and use Spotify Playback SDK for playing a tracks ",
+    "image": "spotify",
+    "url": "https://github.com/dodycode/react-js-spotify-clone"
+  },
+  {
     "name": "Sourci Official Website",
     "description": "Sourci Landing Page built with Gatsby JS and Prismic for user content management. I developed the Sourci website from scratch with Gatsby JS and managed to improve its performance compared to their old Wordpress website.",
     "image": "sourci",
@@ -29,12 +35,6 @@
     "description": "Sourci thinkific course, built from scratch with Thinkific and Shopify as template engine",
     "image": "sourci-ed",
     "url": "https://www.sourci-ed.com.au/"
-  },
-  {
-    "name": "React JS Spotify Clone",
-    "description": "Simple react js web that consume data from Spotify WEB API and use Spotify Playback SDK for playing a tracks ",
-    "image": "spotify",
-    "url": "https://github.com/dodycode/react-js-spotify-clone"
   },
   {
     "name": "Indonesian Noodles Classifier",
