@@ -1,5 +1,12 @@
 ---
-const { text } = Astro.props;
+import { HoverBorderGradient } from "./hover-gradient-button";
+
+interface Props {
+  text: string;
+  href?: string;
+}
+
+const { text, href = "#" } = Astro.props;
 ---
 
 <div class="relative my-32">
@@ -13,9 +20,12 @@ const { text } = Astro.props;
     >
     </div>
   </div>
-  <div
-    class="absolute flex items-center justify-center w-auto h-auto px-3 py-1.5 uppercase tracking-widest space-x-1 text-[0.6rem] md:-translate-x-1/2 -translate-y-1/2 border rounded-full bg-white dark:bg-neutral-900 text-neutral-400 left-0 md:ml-0 ml-5 md:left-1/2 border-neutral-100 dark:border-neutral-800 shadow-sm"
-  >
+  <HoverBorderGradient 
+    containerClassName="absolute uppercase tracking-widest text-[0.6rem] md:-translate-x-1/2 -translate-y-1/2 rounded-full left-0 md:ml-0 ml-5 md:left-1/2 border-neutral-100 dark:border-neutral-800"
+    className="flex items-center justify-center w-auto h-auto px-3 py-1.5 bg-white dark:bg-neutral-900 text-neutral-400"
+    as="a"
+    href={href}
+    client:only="react">
     <p class="leading-none">{text}</p>
     <div
       class="flex items-center justify-center w-5 h-5 translate-x-1 border rounded-full border-neutral-100 dark:border-neutral-800"
@@ -33,5 +43,5 @@ const { text } = Astro.props;
           d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"></path></svg
       >
     </div>
-  </div>
+  </HoverBorderGradient>
 </div>

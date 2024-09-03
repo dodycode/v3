@@ -17,7 +17,7 @@ Here's a taste of what you can look forward to:
 2. **Project Showcases**: I'll be sharing some of my favorite projects.
 3. **Tips and Tricks**: Helpful snippets and best practices I've picked up along the way.
 
-<img src="/assets/images/posts/me.jpeg" alt="Coding Setup" style="float: left; margin-right: 20px; width: 300px;">
+<img src="/assets/images/posts/me.jpeg" alt="Coding Setup" class="float-left mr-5 w-full md:w-72 lg:w-80 mb-4 md:mb-0">
 
 ## A Bit About Me
 
