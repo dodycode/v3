@@ -17,15 +17,18 @@ let headerElement = null;
 document.addEventListener("DOMContentLoaded", () => {
   headerElement = document.getElementById("header");
 
-  if (
-    localStorage.getItem("dark_mode") &&
-    localStorage.getItem("dark_mode") === "true"
-  ) {
+  // Check if dark mode preference is stored
+  const storedDarkMode = localStorage.getItem("dark_mode");
+
+  if (storedDarkMode === null || storedDarkMode === "true") {
+    // If no preference is stored or it's set to true, use dark mode
     window.darkMode = true;
     showNight();
+    localStorage.setItem("dark_mode", "true");
   } else {
     showDay();
   }
+
   stickyHeaderFuncionality();
   applyMenuItemClasses();
   evaluateHeaderPosition();
