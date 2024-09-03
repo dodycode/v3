@@ -12,29 +12,29 @@
     "url": "https://kdramadb.pages.dev/"
   },
   {
-    "name": "React JS Spotify Clone",
-    "description": "Simple react js web that consume data from Spotify WEB API and use Spotify Playback SDK for playing a tracks ",
-    "image": "spotify",
-    "url": "https://github.com/dodycode/react-js-spotify-clone"
-  },
-  {
     "name": "Sourci Official Website",
-    "description": "Sourci Landing Page built with Gatsby JS and Prismic for user content management",
+    "description": "Sourci Landing Page built with Gatsby JS and Prismic for user content management. I developed the Sourci website from scratch with Gatsby JS and managed to improve its performance compared to their old Wordpress website.",
     "image": "sourci",
     "url": "https://www.sourci-ed.com.au/"
   },
   {
     "name": "Vafy.ai Dashboard",
-    "description": "a customer dashboard that provides an overview of voice agents' performance to help customers make data-driven improvements to their clients",
+    "description": "a customer dashboard that provides an overview of voice agents' performance. Built with Next JS 14 and tremor UI for the frontend components",
     "image": "vafy.ai",
     "url": "https://vafy.ai/"
   },
 
   {
     "name": "SourciED Thinkific Course",
-    "description": "Sourci in-depth course put together by industry leaders and sourcing experts that covers the complex world of manufacturing and importing.",
+    "description": "Sourci thinkific course, built from scratch with Thinkific and Shopify as template engine",
     "image": "sourci-ed",
     "url": "https://www.sourci-ed.com.au/"
+  },
+  {
+    "name": "React JS Spotify Clone",
+    "description": "Simple react js web that consume data from Spotify WEB API and use Spotify Playback SDK for playing a tracks ",
+    "image": "spotify",
+    "url": "https://github.com/dodycode/react-js-spotify-clone"
   },
   {
     "name": "Indonesian Noodles Classifier",

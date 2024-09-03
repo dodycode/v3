@@ -21,9 +21,9 @@ Here's a taste of what you can look forward to:
 
 ## A Bit About Me
 
-I'm a fullstack developer with a passion for creating seamless, user-friendly web experiences. I used to be a PHP Developer, but since I started at Upscalix, I've been working on so many JavaScript projects that I've never looked back to PHP! 😄
+I'm a fullstack developer who loves crafting smooth, user-friendly web experiences. My journey started in PHP, but since joining Upscalix, I've dived deep into the world of JavaScript. It's been an exciting ride, and I'm always eager to learn more!
 
-When I'm not coding, you might find me hunting deviants in Once Human..
+When I'm not immersed in code, you might find me hunting deviants in Once Human. It's my favorite way to unwind and enjoy some virtual adventure after a day of problem-solving.
 
 <div style="clear: both;"></div>
 
