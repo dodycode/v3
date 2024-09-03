@@ -10,7 +10,6 @@ type Props = React.PropsWithChildren<{
   className?: string;
   duration?: number;
   clockwise?: boolean;
-  href?: string;
 }> &
   React.HTMLAttributes<HTMLElement>;
 
@@ -21,7 +20,6 @@ export function HoverBorderGradient({
   as: Tag = "button",
   duration = 1,
   clockwise = true,
-  href = "#",
   ...props
 }: Props) {
   const [isHovered, setIsHovered] = useState(false);
