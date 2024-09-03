@@ -8,8 +8,10 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: "https://dodycode.com",
-
   headers: {
     "Content-Security-Policy": `script-src 'self' 'unsafe-inline' https://giscus.app;`,
+  },
+  image: {
+    domains: ["api.microlink.io"],
   },
 });
