@@ -1,6 +1,7 @@
 import rss from "@astrojs/rss";
-
+import type { RSSFeedItem } from "@astrojs/rss";
 import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 
 type MonthAbbreviation =
   | "Jan"
@@ -61,21 +62,20 @@ function isValidMonth(month: string): month is MonthAbbreviation {
   return month in months;
 }
 
-export async function GET(context: any) {
+export async function GET(context: { site: string }) {
   const blog = await getCollection("post");
-
-  console.log(blog);
 
   return rss({
     title: "Dodycode",
     description: "A Fullstack Developer's Blog",
     site: context.site,
-    items: blog.map((post: any) => ({
-      title: post.data.title,
-      pubDate: formatDate(post.data.dateFormatted),
-      description: post.data.description,
-      // Compute RSS link from post `slug`
-      link: `/post/${post.slug}/`,
-    })),
+    items: blog.map(
+      (post: CollectionEntry<"post">): RSSFeedItem => ({
+        title: post.data.title,
+        pubDate: new Date(formatDate(post.data.dateFormatted)),
+        description: post.data.description,
+        link: `/post/${post.slug}/`,
+      })
+    ),
   });
 }

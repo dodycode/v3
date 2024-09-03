@@ -11,7 +11,7 @@ const { repo, repoId, category, categoryId } = Astro.props;
 
 <div class="giscus"></div>
 
-<script src="https://giscus.app/client.js"
+<script is:inline src="https://giscus.app/client.js"
         data-repo={repo}
         data-repo-id={repoId}
         data-category={category}
