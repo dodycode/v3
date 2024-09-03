@@ -1,0 +1,38 @@
+---
+import AboutExperience from "../about-experience.astro"
+import experiences from "../../collections/experiences.json"
+
+const mappedExperiences = await Promise.all(
+  experiences.map(async (experience) => {
+    const imageModule = await import(`../../assets/img/companies/${experience.logo}.png`);
+    return {
+      ...experience,
+      imageModule: imageModule.default
+    };
+  })
+);
+---
+
+<section class="max-w-4xl mx-auto px-7 lg:px-0">
+  <h2
+    class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
+  >
+    My Professional Journey
+  </h2>
+  <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
+    A look at the companies and roles that have contributed to my growth as a full stack javascript developer.
+  </p>
+  <div class="px-5 py-10">
+    {mappedExperiences.map((experience, index, array) => (
+      <div class={index !== array.length - 1 ? "pb-10 border-l border-gray-200 dark:border-neutral-700" : "pb-10"}>
+        <AboutExperience
+          dates={experience.dates}
+          role={experience.role}
+          company={experience.company}
+          description={experience.description}
+          imageModule={experience.imageModule}
+        />
+      </div>
+    ))}
+  </div>
+</section>

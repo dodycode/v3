@@ -1,23 +1,30 @@
 [
-	{
-		"dates": "June 2018 · Present",
-		"role": "Front-end Engineer",
-		"company": "Full Truck Alliance",
-		"description": "Responsible for customer service and CRM system front-end development.",
-		"logo": "/assets/images/experiences/fta.ico"
-	},
-	{
-		"dates": "July 2015 · June 2018",
-		"role": "Front-end Engineer",
-		"company": "YOHO!",
-		"description": "Responsible for mobile front-end development of e-commerce platform.",
-		"logo": "/assets/images/experiences/yoho.ico"
-	},
-	{
-		"dates": "September 2014 · July 2015 ",
-		"role": "Node.JS Developer",
-		"company": "WuLian",
-		"description": "Intern, involved in the development of Internet of Things cloud systems.",
-		"logo": "/assets/images/experiences/wulian.ico"
-	}
+  {
+    "dates": "Jun 2022 · Present",
+    "role": "Remote Full Stack Developer",
+    "company": "Upscalix",
+    "description": "Upscalix is an Australia and Indonesia-based software development company offering digital solutions across various industries. This is where my JavaScript journey began. \n\nAs a Full Stack Developer here, I've played a key role in developing and maintaining web solutions, primarily using JavaScript. I've created a Next.js admin dashboard, refactored React code for better performance, and built a Gatsby.js landing page with Prismic CMS integration. A significant project involved developing a Thinkific course site from scratch, which utilizes the Shopify template engine. During my time here, I've also implemented complex features such as a Google Drive-inspired file manager, include with drag and drop and copy paste feature.",
+    "logo": "upscalix"
+  },
+  {
+    "dates": "Dec 2019 · Apr 2022",
+    "role": "Full Stack Developer",
+    "company": "PT. Omni Hotelier International",
+    "description": "PT. Omni Hotelier Internasional is a cloud-based hospitality system provider that offers powerful and innovative solutions for hotels and other accommodation businesses. PT. Omni Hotelier Internasional provides online booking engine, channel manager, property management system, website development, and online marketing services to help clients increase their revenue and efficiency. \n\n My role was to developed and maintained (refactoring, optimizing back-end queries) their online booking engine system using Laravel PHP Framework.",
+    "logo": "omnih"
+  },
+  {
+    "dates": "Jan 2018 · Nov 2019",
+    "role": "Full Stack Laravel Developer",
+    "company": "Bisloka",
+    "description": "Bisloka is a startup that provides online booking services for bus and ELF rentals in Bali. Bisloka helps customers find the best transportation options for their travel plans and offers various features such as price comparison, payment methods, and customer support. Bisloka aims to make bus and ELF rental more convenient and affordable for everyone. \n\n I was responsible for finishing the MVP version of the web app of Bisloka using Laravel PHP Framework",
+    "logo": "bisloka"
+  },
+  {
+    "dates": "Jul 2016 · Nov 2016 ",
+    "role": "Internship",
+    "company": "Avatar Solutions",
+    "description": "Avatar Solutions is a software development company based in Bali that provides IT solutions for various clients across different industries. Avatar Solutions specializes in mobile application, web design, system integration, and technical support services \n\n I was Join for Internships Program, involved in the development of .NET Desktop Application",
+    "logo": "avatar-solution"
+  }
 ]

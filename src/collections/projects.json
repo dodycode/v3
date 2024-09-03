@@ -1,20 +1,45 @@
 [
-	{
-		"name": "Email.ML",
-		"description": "Minimalist temporary Email.",
-		"image": "/assets/images/projects/email.ml.png",
-		"url": "https://email.ml"
-	},
-	{
-		"name": "DNS.Surf",
-		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
-		"image": "/assets/images/projects/dns.surf.png",
-		"url": "https://dns.surf"
-	},
-	{
-		"name": "HTML.ZONE",
-		"description": "Web Toolbox.",
-		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone"
-	}
+  {
+    "name": "Stack Card Slider",
+    "description": "Stack Cards Slider made with React Framer Motion. Build for learning purposes.",
+    "image": "stack-cards",
+    "url": "https://cards-stack-react.pages.dev/"
+  },
+  {
+    "name": "KDrama DB",
+    "description": "List of KDRAMA from TMDB API. Made with Remix, and NextUI.",
+    "image": "kdramadb",
+    "url": "https://kdramadb.pages.dev/"
+  },
+  {
+    "name": "React JS Spotify Clone",
+    "description": "Simple react js web that consume data from Spotify WEB API and use Spotify Playback SDK for playing a tracks ",
+    "image": "spotify",
+    "url": "https://github.com/dodycode/react-js-spotify-clone"
+  },
+  {
+    "name": "Sourci Official Website",
+    "description": "Sourci Landing Page built with Gatsby JS and Prismic for user content management",
+    "image": "sourci",
+    "url": "https://www.sourci-ed.com.au/"
+  },
+  {
+    "name": "Vafy.ai Dashboard",
+    "description": "a customer dashboard that provides an overview of voice agents' performance to help customers make data-driven improvements to their clients",
+    "image": "vafy.ai",
+    "url": "https://vafy.ai/"
+  },
+
+  {
+    "name": "SourciED Thinkific Course",
+    "description": "Sourci in-depth course put together by industry leaders and sourcing experts that covers the complex world of manufacturing and importing.",
+    "image": "sourci-ed",
+    "url": "https://www.sourci-ed.com.au/"
+  },
+  {
+    "name": "Indonesian Food Classifier",
+    "description": "Google Techable Machine Instant noodles Classifier",
+    "image": "indonesian-food-classifier",
+    "url": "https://techablemachine-mie-instant-classifier.now.sh/"
+  }
 ]

@@ -2,6 +2,27 @@
 import projects from "../../collections/projects.json";
 import Button from "../button.astro";
 import Project from "../project.astro";
+
+// Sort projects in reverse chronological order and take the first three
+const latestProjects = [...projects]
+  .slice(0, 3);
+
+const mappedLatestProjects = await Promise.all(
+  latestProjects.map(async (latestProject) => {
+    let imageModule = null;
+    try {
+      imageModule = await import(`../../assets/img/projects/${latestProject.image}.png`);
+    } catch (error) {
+      //maybe the image is a gif
+      imageModule = await import(`../../assets/img/projects/${latestProject.image}.gif`);
+    }
+
+    return {
+      ...latestProject,
+      imageModule: imageModule.default
+    };
+  })
+);
 ---
 
 <section class="max-w-4xl mx-auto px-7 lg:px-0">
@@ -18,13 +39,15 @@ import Project from "../project.astro";
     class="grid items-stretch w-full sm:grid-cols-2 md:grid-cols-3 gap-7 mt-7"
   >
     {
-      projects.map((project) => {
+      mappedLatestProjects.map((project, index) => {
+        if(index > 2) return null;
+
         return (
           <Project
             name={project.name}
             description={project.description}
-            image={project.image}
             url={project.url}
+            imageModule={project.imageModule}
           />
         )
       })
