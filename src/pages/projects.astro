@@ -2,6 +2,7 @@
 import projects from "../collections/projects.json";
 import PageHeading from "../components/page-heading.astro";
 import Project from "../components/project.astro";
+import { SlideInContainer } from "../components/slide-in-container";
 import Layout from "../layouts/main.astro";
 
 const mappedLatestProjects = await Promise.all(
@@ -22,28 +23,32 @@ const mappedLatestProjects = await Promise.all(
 );
 ---
 
-<Layout title="My Projects">
+<Layout title="My Projects | Dodycode" description="Dodycode's Favorite Projects">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
-    <PageHeading
-      title="My Web Dev Adventures"
-      description="Here are some of the exciting projects I've been working on. I really enjoy creating these projects, so I will share them here. More projects will come, so check back often!"
-    />
+    <SlideInContainer client:visible>
+      <PageHeading
+        title="My Web Dev Adventures"
+        description="Here are some of the exciting projects I've been working on. I really enjoy creating these projects, so I will share them here. More projects will come, so check back often!"
+      />
+    </SlideInContainer>
 
-    <div
-      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-2"
-    >
-      {
-        mappedLatestProjects.map((project) => {
-          return (
-            <Project
-              name={project.name}
-              description={project.description}
-              url={project.url}
-              imageModule={project.imageModule}
-            />
-          )
-        })
-      }
-    </div>
+    <SlideInContainer delay={0.3} client:visible>
+      <div
+        class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-2"
+      >
+        {
+          mappedLatestProjects.map((project) => {
+            return (
+              <Project
+                name={project.name}
+                description={project.description}
+                url={project.url}
+                imageModule={project.imageModule}
+              />
+            )
+          })
+        }
+      </div>
+    </SlideInContainer>
   </section>
 </Layout>

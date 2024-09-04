@@ -1,19 +1,28 @@
 ---
 import Projects from "../components/home/projects.astro";
-import Separator from "../components/home/separator.astro";
+import { Separator } from "../components/home/separator";
 import Welcome from "../components/home/welcome.astro";
 import Writings from "../components/home/writings.astro";
 import Experience from "../components/home/experience.astro";
 
 import Layout from "../layouts/main.astro";
+import { SlideInContainer } from "../components/slide-in-container";
 ---
 
-<Layout title="Dodycode">
-  <Welcome />
-  <Separator text="Professional Journey" href="#experience" />
+<Layout 
+  title="Dodycode's Digital Journey" 
+  description="a Fullstack Javascript Developer who loves crafting smooth, user-friendly web experiences with Javascript.">
+  <SlideInContainer client:visible>
+    <Welcome />
+  </SlideInContainer>
+  <Separator client:visible text="Professional Journey" href="#experience" />
   <Experience />
-  <Separator text="Check out my projects" href="#projects" />
-  <Projects />
-  <Separator text="Some of my writing" href="#writings" />
-  <Writings />
+  <Separator client:visible text="Check out my projects" href="#projects" />
+  <SlideInContainer delay={0.2} client:visible>
+    <Projects />
+  </SlideInContainer>
+  <Separator client:visible text="Some of my writing" href="#writings" />
+  <SlideInContainer client:visible>
+    <Writings />
+  </SlideInContainer>
 </Layout>
