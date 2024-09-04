@@ -1,11 +1,11 @@
 ---
 layout: ../../layouts/post.astro
-title: Welcome to My Digital Journey - A Fullstack Developer's Blog
+title: Welcome to My Digital Space!
 description: a welcome post
 dateFormatted: Sep 3rd, 2024
 ---
 
-# Welcome to My Digital Journey!
+# Welcome to My Digital Space!
 
 Hello there! 👋 I'm thrilled to welcome you to my corner of the internet. In this personal site I'll be sharing my adventures in the world of web development, my thoughts on the latest tech trends, and the occasional peek into my life as a fullstack developer.
 
