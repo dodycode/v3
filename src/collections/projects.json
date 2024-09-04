@@ -7,9 +7,15 @@
   },
   {
     "name": "KDrama DB",
-    "description": "List of KDRAMA from TMDB API. Made with Remix, and NextUI.",
+    "description": "List of KDRAMA and KMOVIES that fetches data from TMDB API. Made with Remix, and NextUI.",
     "image": "kdramadb",
     "url": "https://kdramadb.pages.dev/"
+  },
+  {
+    "name": "Primakara University Website",
+    "description": "Primakara University official website built with Astro JS and strapi for user content management.",
+    "image": "primakara",
+    "url": "https://primakara.ac.id/"
   },
   {
     "name": "React JS Spotify Clone",
@@ -29,12 +35,23 @@
     "image": "vafy.ai",
     "url": "https://vafy.ai/"
   },
-
   {
     "name": "SourciED Thinkific Course",
     "description": "Sourci thinkific course, built from scratch with Thinkific and Shopify as template engine",
     "image": "sourci-ed",
     "url": "https://www.sourci-ed.com.au/"
+  },
+  {
+    "name": "Omni Hotelier Booking Engine",
+    "description": "Omni Hotelier Booking Engine that built with Laravel PHP Framework and Vue JS as a frontend.",
+    "image": "omnih",
+    "url": "https://omnihotelier.com/en/booking-engine/"
+  },
+  {
+    "name": "Bisloka Booking Website",
+    "description": "MVP of Bisloka Booking Website that I built from scratch with Laravel PHP Framework and JQuery",
+    "image": "bisloka",
+    "url": "https://bisloka.com/"
   },
   {
     "name": "Indonesian Noodles Classifier",
