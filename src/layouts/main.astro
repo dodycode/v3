@@ -3,6 +3,7 @@ import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
 import SquareLines from "../components/square-lines.astro";
 import "../assets/css/main.css";
+import FloatingContactButton from "../components/floating-contact-button";
 
 interface Props {
   title: string
@@ -90,5 +91,6 @@ function formatCanonicalURL(url: string | URL) {
     <Footer />
     <script src="../assets/js/main.js"></script>
     <Fragment set:html={import.meta.env.FOOTER_INJECT} />
+    <FloatingContactButton client:load />
   </body>
 </html>

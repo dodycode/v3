@@ -39,6 +39,25 @@ html.dark #darkToggle:hover .horizon {
   animation: 1s ease 0s 1 rising;
 }
 
+.custom-contact-btn {
+  height: 40px;
+  overflow: hidden;
+  pointer-events: auto;
+  background: linear-gradient(180deg, #13151a 0%, rgba(19, 21, 26, 0.88) 100%);
+  border: 1px solid #343841;
+  border-radius: 9999px;
+  box-shadow: 0px 0px 0px 0px rgba(19, 21, 26, 0.3),
+    0px 1px 2px 0px rgba(19, 21, 26, 0.29),
+    0px 4px 4px 0px rgba(19, 21, 26, 0.26),
+    0px 10px 6px 0px rgba(19, 21, 26, 0.15),
+    0px 17px 7px 0px rgba(19, 21, 26, 0.04),
+    0px 26px 7px 0px rgba(19, 21, 26, 0.01);
+}
+
+#dev-toolbar-root {
+  display: none;
+}
+
 @keyframes setting {
   0% {
     transform: translate3d(0, 10px, 0);
