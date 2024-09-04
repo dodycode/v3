@@ -6,7 +6,12 @@ const FloatingContactButton: React.FC = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 300) {
+      const scrolled = window.scrollY;
+      const viewportHeight = window.innerHeight;
+      const fullHeight = document.documentElement.scrollHeight;
+
+      // Show button when scrolled down, hide when at the top or bottom
+      if (scrolled > 300 && scrolled + viewportHeight < fullHeight - 50) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -14,6 +19,7 @@ const FloatingContactButton: React.FC = () => {
     };
 
     window.addEventListener("scroll", toggleVisibility);
+    toggleVisibility(); // Call it once to set initial state
 
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
