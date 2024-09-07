@@ -6,8 +6,8 @@
     "url": "https://cards-stack-react.pages.dev/"
   },
   {
-    "name": "KDrama DB",
-    "description": "List of KDRAMA and KMOVIES that fetches data from TMDB API. Made with Remix, and NextUI.",
+    "name": "Kdrama DB",
+    "description": "list of KDRAMA fetched from the TMDB API, can be used for those looking for something good to watch, build with Remix JS.",
     "image": "kdramadb",
     "url": "https://kdramadb.pages.dev/"
   },
